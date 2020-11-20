@@ -60,7 +60,7 @@ gclient runhooks
 
 #https://unix.stackexchange.com/questions/429518/how-do-i-build-a-chromium-dist-preferably-zip-for-linix
 
-gn gen out/Release --args="is_component_build=false is_debug=false symbol_level=0 enable_nacl=true remove_webcore_debug_symbols=true enable_linux_installer=true"
+gn gen out/Release --args="is_component_build=false is_debug=false symbol_level=0 enable_nacl=true blink_symbol_level=0 enable_linux_installer=true"
 ninja -C out/Release "chrome/installer/linux:unstable_deb"
 
 
