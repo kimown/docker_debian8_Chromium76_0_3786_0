@@ -62,7 +62,7 @@ gclient runhooks
 
 gn gen out/Release --args="is_component_build=false is_debug=false symbol_level=0 enable_nacl=true blink_symbol_level=0 enable_linux_installer=true"
 ninja -C out/Release "chrome/installer/linux:unstable_deb"
-
+ls out/Release/chromium-browser-unstable_76.0.3786.0-1_amd64.deb
 
 #https://groups.google.com/a/chromium.org/g/chromium-dev/c/ZoJbiIxHf0o/m/AvIkPyxYBgAJ
 #gn gen out/Default --args="is_official_build=true" 
